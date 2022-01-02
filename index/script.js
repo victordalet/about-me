@@ -14,3 +14,16 @@ function typewriter(word,index){
 setTimeout(()=> {
 	typewriter(txt,0)
 },200);
+
+
+/**************************  ANIMATION *****************************/
+
+const img = document.querySelector("img");
+
+const TL1 = new TimelineMax({pause : true});
+
+TL1
+.from(img,3, {y: -1000, opacity : 0} )
+
+
+TL1.play()
