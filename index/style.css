@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-background: #D0CBC7;
+}
+
+html {
+  background: var(--color-background);
+  text-align: center;
+}
+
+/************************** TYPEWRITTER **************************/
+
+
+div.name {
+  width: 100%;
+  text-align: center;
+  justify-items: center;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 75px;
+  color: #000;
+  display: inline-block;
+  margin-top: 100px;
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 3px;
+  background: #000;
+  right: -15px;
+  top: 0;
+  animation: cursor 1s infinite;
+}
+
+@keyframes cursor
+{
+  0%
+  {
+    opacity: 1;
+  }
+  50%
+  {
+    opacity: 0;
+  }
+  100%
+  {
+    opacity: 1;
+  }
+}
+
+/**************************** PP ***************************/
+
+div.pp {
+  text-align: center;
+}
+
+img.pp {
+  margin: 0 auto;
+  box-shadow: 9px 9px 16px #808080,-9px -9px 16px #ddd;
+  border-radius: 100px;
+}
+
+img.pp:hover {
+  box-shadow: inset 5px 5px 7px 5px rgba(0, 0, 0, 0.1), inset -5px -5px 7px 5px rgba(247, 251, 255, 0.6);
+}
