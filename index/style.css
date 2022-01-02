@@ -15,11 +15,18 @@ html {
   text-align: center;
 }
 
+body {
+  width: 100%;
+  heigh:100%;
+  margin:0px;
+  padding:0px;
+}
 /************************** TYPEWRITTER **************************/
 
 
 div.name {
   width: 100%;
+  height: 100%;
   text-align: center;
   justify-items: center;
 }
@@ -70,6 +77,7 @@ div.pp {
 img.pp {
   margin: 0 auto;
   box-shadow: 9px 9px 16px #808080,-9px -9px 16px #ddd;
+  border: 10px solid white;
   border-radius: 100px;
 }
 
@@ -82,6 +90,8 @@ img.pp:hover {
 
 div.project {
   text-align: center;
+  width: 100%;
+  min-height: 100%;
 }
 
 
