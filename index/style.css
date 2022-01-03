@@ -18,7 +18,7 @@ html {
 body {
   width: 100%;
   heigh:100%;
-  margin:0px;
+  margin:0;
   padding:0px;
 }
 /************************** TYPEWRITTER **************************/
@@ -38,6 +38,7 @@ h1 {
   display: inline-block;
   margin-top: 100px;
   position: relative;
+  margin: 0 auto;
 }
 
 h1::after {

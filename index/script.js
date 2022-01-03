@@ -37,7 +37,7 @@ card12.addEventListener('mouseleave', function (e) {
 
 /**************************  ANIMATION *****************************/
 
-const img = document.querySelector("img");
+const img = document.querySelector("img.pp");
 
 const TL1 = new TimelineMax({pause : true});
 
