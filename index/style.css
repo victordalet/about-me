@@ -165,24 +165,117 @@ h2.project span:last-child {
   margin: 1em auto 0;
 }
 
-.card--12 {
-  --mouseX12: 0;
-  --mouseY12: 0;
+.card--1 {
+  --mouseX1: 0;
+  --mouseY1: 0;
   perspective: 700px;
 }
-.card--12 .card__title {
-  transform: translate3d(calc(var(--mouseY12) * 1px), calc(var(--mouseX12) * 1px), 0);
+.card--1 .card__title {
+  transform: translate3d(calc(var(--mouseY1) * 1px), calc(var(--mouseX1) * 1px), 0);
 }
-.card--12 .card__img {
-  transform: translate3d(calc(var(--mouseY12) * 1px), calc(var(--mouseX12) * -1px), calc(var(--mouseY12) * 1px));
+.card--1 .card__img {
+  transform: translate3d(calc(var(--mouseY1) * 1px), calc(var(--mouseX1) * -1px), calc(var(--mouseY1) * 1px));
 }
-.card--12 .card__text {
-  transform: translate3d(calc(var(--mouseY12) * -1px), calc(var(--mouseX12) * -1px), 0);
+.card--1 .card__text {
+  transform: translate3d(calc(var(--mouseY1) * -1px), calc(var(--mouseX1) * -1px), 0);
 }
-.card--12 .card__btn {
-  transform: translate3d(calc(var(--mouseX12) * -1px), calc(var(--mouseY12) * -1px), calc(var(--mouseX12) * -1px));
+.card--1 .card__btn {
+  transform: translate3d(calc(var(--mouseX1) * -1px), calc(var(--mouseY1) * -1px), calc(var(--mouseX1) * -1px));
 }
 
+
+/**********/
+
+.card--2 {
+  --mouseX2: 0;
+  --mouseY2: 0;
+  perspective: 700px;
+}
+.card--2 .card__title {
+  transform: translate3d(calc(var(--mouseY2) * 1px), calc(var(--mouseX2) * 1px), 0);
+}
+.card--2 .card__img {
+  transform: translate3d(calc(var(--mouseY2) * 1px), calc(var(--mouseX2) * -1px), calc(var(--mouseY2) * 1px));
+}
+.card--2 .card__text {
+  transform: translate3d(calc(var(--mouseY2) * -1px), calc(var(--mouseX2) * -1px), 0);
+}
+.card--2 .card__btn {
+  transform: translate3d(calc(var(--mouseX2) * -1px), calc(var(--mouseY2) * -1px), calc(var(--mouseX2) * -1px));
+}
+
+/*************/
+.card--3 {
+  --mouseX3: 0;
+  --mouseY3: 0;
+  perspective: 700px;
+}
+.card--3 .card__title {
+  transform: translate3d(calc(var(--mouseY3) * 1px), calc(var(--mouseX3) * 1px), 0);
+}
+.card--3 .card__img {
+  transform: translate3d(calc(var(--mouseY3) * 1px), calc(var(--mouseX3) * -1px), calc(var(--mouseY3) * 1px));
+}
+.card--3 .card__text {
+  transform: translate3d(calc(var(--mouseY3) * -1px), calc(var(--mouseX3) * -1px), 0);
+}
+.card--3 .card__btn {
+  transform: translate3d(calc(var(--mouseX3) * -1px), calc(var(--mouseY3) * -1px), calc(var(--mouseX3) * -1px));
+}
+/***********/
+.card--4 {
+  --mouseX4: 0;
+  --mouseY4: 0;
+  perspective: 700px;
+}
+.card--4 .card__title {
+  transform: translate3d(calc(var(--mouseY4) * 1px), calc(var(--mouseX4) * 1px), 0);
+}
+.card--4 .card__img {
+  transform: translate3d(calc(var(--mouseY4) * 1px), calc(var(--mouseX4) * -1px), calc(var(--mouseY4) * 1px));
+}
+.card--4 .card__text {
+  transform: translate3d(calc(var(--mouseY4) * -1px), calc(var(--mouseX4) * -1px), 0);
+}
+.card--4 .card__btn {
+  transform: translate3d(calc(var(--mouseX4) * -1px), calc(var(--mouseY4) * -1px), calc(var(--mouseX4) * -1px));
+}
+/************/
+.card--5 {
+  --mouseX5: 0;
+  --mouseY5: 0;
+  perspective: 700px;
+}
+.card--5 .card__title {
+  transform: translate3d(calc(var(--mouseY5) * 1px), calc(var(--mouseX5) * 1px), 0);
+}
+.card--5 .card__img {
+  transform: translate3d(calc(var(--mouseY5) * 1px), calc(var(--mouseX5) * -1px), calc(var(--mouseY5) * 1px));
+}
+.card--5 .card__text {
+  transform: translate3d(calc(var(--mouseY5) * -1px), calc(var(--mouseX5) * -1px), 0);
+}
+.card--5 .card__btn {
+  transform: translate3d(calc(var(--mouseX5) * -1px), calc(var(--mouseY5) * -1px), calc(var(--mouseX5) * -1px));
+}
+/************/
+.card--6 {
+  --mouseX6: 0;
+  --mouseY6: 0;
+  perspective: 700px;
+}
+.card--6 .card__title {
+  transform: translate3d(calc(var(--mouseY6) * 1px), calc(var(--mouseX6) * 1px), 0);
+}
+.card--6 .card__img {
+  transform: translate3d(calc(var(--mouseY6) * 1px), calc(var(--mouseX6) * -1px), calc(var(--mouseY6) * 1px));
+}
+.card--6 .card__text {
+  transform: translate3d(calc(var(--mouseY6) * -1px), calc(var(--mouseX6) * -1px), 0);
+}
+.card--6 .card__btn {
+  transform: translate3d(calc(var(--mouseX6) * -1px), calc(var(--mouseY6) * -1px), calc(var(--mouseX6) * -1px));
+}
 
 /********************* TEL ****************************/
 @media screen and (max-width: 600px) {
