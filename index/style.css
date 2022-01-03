@@ -29,6 +29,8 @@ div.name {
   height: 50vw;
   text-align: center;
   justify-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
 h1 {
@@ -70,6 +72,13 @@ h1::after {
   }
 }
 
+
+.paper-plane {
+  height: 100px;
+  position: absolute;
+  top : 50%;
+  left: 0%;
+}
 /**************************** PP ***************************/
 
 div.pp {
