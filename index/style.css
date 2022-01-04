@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
 
 * {
   margin: 0;
@@ -288,6 +288,28 @@ h2.project span:last-child {
 .card--6 .card__btn {
   transform: translate3d(calc(var(--mouseX6) * -1px), calc(var(--mouseY6) * -1px), calc(var(--mouseX6) * -1px));
 }
+/**************/
+.card--7 {
+  --mouseX7: 0;
+  --mouseY7: 0;
+  perspective: 700px;
+}
+.card--7 .card__title {
+  transform: translate3d(calc(var(--mouseY7) * 1px), calc(var(--mouseX7) * 1px), 0);
+}
+.card--7 .card__img {
+  transform: translate3d(calc(var(--mouseY7) * 1px), calc(var(--mouseX7) * -1px), calc(var(--mouseY7) * 1px));
+}
+.card--7 .card__text {
+  transform: translate3d(calc(var(--mouseY7) * -1px), calc(var(--mouseX7) * -1px), 0);
+}
+.card--7 .card__btn {
+  transform: translate3d(calc(var(--mouseX7) * -1px), calc(var(--mouseY7) * -1px), calc(var(--mouseX7) * -1px));
+}
+
+.line {
+  display: block;
+}
 
 /********************* TEL ****************************/
 @media screen and (max-width: 600px) {
@@ -320,6 +342,10 @@ h2.project span:last-child {
   .social {
     opacity: 0;
   }
+
+  .line {
+  display: block;
+}
 
 }
 
@@ -415,3 +441,4 @@ a.git {
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
 }
+
