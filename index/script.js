@@ -203,7 +203,7 @@ card7.addEventListener('mousemove', function (e) {
 card7.addEventListener('mouseleave', function (e) {
 
   card7.style.setProperty('--mouseX7', 0);
-  card7.style.setProperty('--mouseY7', 0);
+  card7.style.setProperty('--mouseY', 0);
 
 });
 
