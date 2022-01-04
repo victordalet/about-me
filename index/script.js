@@ -1,3 +1,43 @@
+/*********************** SCROLL ****************************/
+
+const flightPath = {
+	cirviness : 1.25,
+	autoRotate : true,
+	values : [
+		{x:100,y:-20},
+		{x:300,y:10},
+		{x:500,y:100},
+		{x:750,y:-100},
+		{x:350,y:-50},
+		{x:600,y:100},
+		{x:800,y:0},
+		{x:window.innerWidth,y:-250}
+	]
+};
+
+
+const tween = new TimelineLite();
+
+tween.add(
+	TweenLite.to('.paper-plane',1,{
+		bezier : flightPath,
+		ease : Power1.easeInOut
+	})
+	);
+
+const controller = new ScrollMagic.Controller();
+const scene = new ScrollMagic.Scene({
+	triggerElement : '.name',
+	duration:2000,
+	triggerHook: 0
+})
+
+.setTween(tween)
+.setPin('.name')
+.addTo(controller);
+
+
+
 /********************** TYPEWRITTER ***************************/
 const title = document.querySelector('h1');
 const txt = "I'm Victor Dalet, a young developer."
@@ -15,6 +55,29 @@ setTimeout(()=> {
 	typewriter(txt,0)
 },200);
 
+
+/************************** LOADER ***************************/
+
+const images = document.querySelectorAll(".card")
+let options = {
+  // root: null,
+  rootMargin: "-10% 0px",
+  threshold: 0.4
+}
+
+function handleIntersect(entries){
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.style.opacity = 1;
+    }
+  })
+}
+
+const observer = new IntersectionObserver(handleIntersect, options)
+
+images.forEach(image => {
+  observer.observe(image)
+})
 
 /**************************  CARDS *****************************/
 var card1 = document.querySelector(".card--1");
@@ -126,54 +189,8 @@ card6.addEventListener('mouseleave', function (e) {
 });
 /******************/
 
-/**************************  ANIMATION *****************************/
-
-const img = document.querySelector("img.pp");
-
-const TL1 = new TimelineMax({pause : true});
-
-TL1
-.from(img,3, {y: -1000, opacity : 0} )
 
 
-TL1.play()
 
 
-/*********************** SCROLL ****************************/
 
-const flightPath = {
-	cirviness : 1.25,
-	autoRotate : true,
-	values : [
-		{x:100,y:-20},
-		{x:300,y:10},
-		{x:500,y:100},
-		{x:750,y:-100},
-		{x:350,y:-50},
-		{x:600,x:100},
-		{x:800,y:0},
-		{x:window.innerWidth,y:-250}
-	]
-};
-
-
-const tween = new TimelineLite();
-
-tween.add(
-	TweenLite.to('.paper-plane',1,{
-		bezier : flightPath,
-		ease : Power1.easeInOut
-	})
-	);
-
-const controller = new ScrollMagic.Controller();
-const scene = new ScrollMagic.Scene({
-	triggerElement : '.name',
-	duration:2000,
-	triggerHook: 0
-})
-
-.setTween(tween)
-.addIndicators()
-.setPin('.name')
-.addTo(controller);
