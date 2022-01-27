@@ -18,7 +18,7 @@ setTimeout(()=> {
 
 /************************** LOADER ***************************/
 
-const images = document.querySelectorAll(".card")
+const images = document.querySelectorAll("article")
 let options = {
   // root: null,
   rootMargin: "-10% 0px",
@@ -77,7 +77,7 @@ var get = document.querySelector.bind(document),
   context,
   surfaces,
   palleteNum = 0,
-  palleteFirst = ['0cf', '0fc', 'ff0', 'f0c', 'c0f'],
+  palleteFirst = ['0000ff','0000ff','fff','ff0000','ff0000'],
   palletes = [
     ['000', 'ff0', 'f0f', '0ff', 'fff'],
     ['000', 'fff', '000', 'fff', '000'],
@@ -118,7 +118,10 @@ var get = document.querySelector.bind(document),
     ['fe4365', 'fc9d9a', 'f9cdad', 'c8c8a9', '83af9b'],
     ['ff4e50', 'fc913a', 'f9d423', 'ede574', 'e1f5c4'],
     ['ff9900', '424242', 'e9e9e9', 'bcbcbc', '3299bb'],
-    ['ffed90', 'a8d46f', '359668', '3c3251', '341139']
+    ['ffed90', 'a8d46f', '359668', '3c3251', '341139'],
+    ['000000', '0000ff', '00ff00' , 'ff0000','ffffff'],
+    ['0cf', '0fc', 'ff0', 'f0c', 'c0f'],
+    ['0000ff','0000ff','fff','ff0000','ff0000']
   ];
 
 function Point(x, y) {
@@ -303,6 +306,7 @@ function init() {
     new Surface(2/5),
     new Surface(1/5)
   ];
+
 
   palletes.shuffle();
   palletes.unshift(palleteFirst);

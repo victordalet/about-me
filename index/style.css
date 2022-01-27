@@ -212,7 +212,7 @@ a, a:hover {
     justify-content: start;
   }
   .postcard .postcard__img {
-    max-width: 300px;
+    max-width: 250px;
     max-height: 100%;
     transition: transform 0.3s ease;
   }
@@ -227,7 +227,7 @@ a, a:hover {
     background: #18151f;
     top: -20%;
     height: 130%;
-    width: 55px;
+    width: 40px;
   }
   .postcard:hover .postcard__img {
     transform: scale(1.1);
@@ -468,6 +468,19 @@ a, a:hover {
 
   .containercards {
     width: 100%;
+    margin: 0;
   }
 
+  #pageHeaderTitle {
+  margin: 2rem 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+  }
+
+
+}
+article {
+  opacity: 0;
+  transition-duration: 1s;
 }
