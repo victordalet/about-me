@@ -10,6 +10,12 @@ const slidingNewsLetters9 = document.querySelector('.slide9')
 const slidingNewsLetters10 = document.querySelector('.slide10')
 const slidingNewsLetters11= document.querySelector('.slide11')
 const slidingNewsLetters12 = document.querySelector('.slide12')
+const slidingNewsLetters13 = document.querySelector('.slide13')
+const slidingNewsLetters14 = document.querySelector('.slide14')
+const slidingNewsLetters15 = document.querySelector('.slide15')
+const slidingNewsLetters16 = document.querySelector('.slide16')
+const slidingNewsLetters17 = document.querySelector('.slide17')
+const slidingNewsLetters18 = document.querySelector('.slide18')
 
 window.addEventListener('scroll',()=>{
   const {scrollTop,clientHeight} = document.documentElement;
@@ -25,6 +31,12 @@ window.addEventListener('scroll',()=>{
   const topElementToTopViewport10 = slidingNewsLetters10.getBoundingClientRect().top;
   const topElementToTopViewport11 = slidingNewsLetters11.getBoundingClientRect().top;
   const topElementToTopViewport12 = slidingNewsLetters12.getBoundingClientRect().top;
+  const topElementToTopViewport13 = slidingNewsLetters13.getBoundingClientRect().top;
+  const topElementToTopViewport14 = slidingNewsLetters14.getBoundingClientRect().top;
+  const topElementToTopViewport15 = slidingNewsLetters15.getBoundingClientRect().top;
+  const topElementToTopViewport16 = slidingNewsLetters16.getBoundingClientRect().top;
+  const topElementToTopViewport17 = slidingNewsLetters17.getBoundingClientRect().top;
+  const topElementToTopViewport18 = slidingNewsLetters18.getBoundingClientRect().top;
 
   if(scrollTop > (scrollTop+topElementToTopViewport1).toFixed()-clientHeight*0.8){
     slidingNewsLetters1.classList.add('active1')
@@ -73,6 +85,31 @@ window.addEventListener('scroll',()=>{
   if(scrollTop > (scrollTop+topElementToTopViewport12).toFixed()-clientHeight*0.9){
     slidingNewsLetters12.classList.add('active12')
   }
+
+  if(scrollTop > (scrollTop+topElementToTopViewport13).toFixed()-clientHeight*0.8){
+    slidingNewsLetters13.classList.add('active13')
+  }
+
+  if(scrollTop > (scrollTop+topElementToTopViewport14).toFixed()-clientHeight*0.8){
+    slidingNewsLetters14.classList.add('active14')
+  }
+
+  if(scrollTop > (scrollTop+topElementToTopViewport15).toFixed()-clientHeight*0.8){
+    slidingNewsLetters15.classList.add('active15')
+  }
+
+  if(scrollTop > (scrollTop+topElementToTopViewport16).toFixed()-clientHeight*0.8){
+    slidingNewsLetters16.classList.add('active16')
+  }
+
+  if(scrollTop > (scrollTop+topElementToTopViewport17).toFixed()-clientHeight*0.8){
+    slidingNewsLetters17.classList.add('active17')
+  }
+
+  if(scrollTop > (scrollTop+topElementToTopViewport18).toFixed()-clientHeight*0.8){
+    slidingNewsLetters18.classList.add('active18')
+  }
+
 })
 
 /************************/
