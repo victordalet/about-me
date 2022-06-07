@@ -16,6 +16,8 @@ const slidingNewsLetters15 = document.querySelector('.slide15')
 const slidingNewsLetters16 = document.querySelector('.slide16')
 const slidingNewsLetters17 = document.querySelector('.slide17')
 const slidingNewsLetters18 = document.querySelector('.slide18')
+const slidingNewsLetters19 = document.querySelector('.slide19')
+const slidingNewsLetters20 = document.querySelector('.slide20')
 
 window.addEventListener('scroll',()=>{
   const {scrollTop,clientHeight} = document.documentElement;
@@ -37,6 +39,8 @@ window.addEventListener('scroll',()=>{
   const topElementToTopViewport16 = slidingNewsLetters16.getBoundingClientRect().top;
   const topElementToTopViewport17 = slidingNewsLetters17.getBoundingClientRect().top;
   const topElementToTopViewport18 = slidingNewsLetters18.getBoundingClientRect().top;
+  const topElementToTopViewport19 = slidingNewsLetters19.getBoundingClientRect().top;
+  const topElementToTopViewport20 = slidingNewsLetters20.getBoundingClientRect().top;
 
   if(scrollTop > (scrollTop+topElementToTopViewport1).toFixed()-clientHeight*0.8){
     slidingNewsLetters1.classList.add('active1')
@@ -108,6 +112,14 @@ window.addEventListener('scroll',()=>{
 
   if(scrollTop > (scrollTop+topElementToTopViewport18).toFixed()-clientHeight*0.8){
     slidingNewsLetters18.classList.add('active18')
+  }
+
+  if(scrollTop > (scrollTop+topElementToTopViewport19).toFixed()-clientHeight*0.8){
+    slidingNewsLetters19.classList.add('active19')
+  }
+
+  if(scrollTop > (scrollTop+topElementToTopViewport20).toFixed()-clientHeight*0.8){
+    slidingNewsLetters20.classList.add('active20')
   }
 
 })
