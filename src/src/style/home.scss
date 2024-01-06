@@ -1,0 +1,117 @@
+.container-home {
+  width: 100vw;
+  height: 100vh;
+  background-color: $color_dark_grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    font-size: 300px;
+    text-align: center;
+    color: $color_white;
+    animation: animation-launch;
+    animation-duration: 2s;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    cursor: pointer;
+  }
+
+  h2 {
+    color: $color_white;
+    font-size: 30px;
+    animation: animation-launch;
+    animation-duration: 2s;
+  }
+
+  .btn-download {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: $color_white;
+    border: 2px solid $color_white;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 16px;
+    font-weight: bold;
+    animation: animation-launch;
+    animation-duration: 2s;
+
+    &:hover {
+      background-color: $color_dark_grey;
+      border: 2px solid $color_white;
+      box-shadow: 1px 10px 20px #111;
+      color: $color_white;
+    }
+  }
+
+
+}
+
+.container-project {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color_dark_grey;
+
+  .info-container {
+    width: 60%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 10px 10px 10px #222;
+    background-color: $color_black;
+    border-radius: 20px;
+
+    img {
+      width: 15%;
+      position: absolute;
+      top: 22%;
+      left: 21%;
+    }
+
+    h1 {
+      font-size: 50px;
+      font-weight: bold;
+      margin-bottom: 10%;
+      cursor: pointer;
+
+      a {
+        color: $color_white;
+      }
+
+    }
+
+    h2 {
+      color: $color_white;
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 20px;
+      width: 80%;
+
+    }
+
+  }
+
+}
+
+
+.container-home-page {
+  position: sticky;
+  top: 0;
+}
